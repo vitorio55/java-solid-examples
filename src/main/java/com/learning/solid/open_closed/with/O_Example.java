@@ -16,6 +16,9 @@ public class O_Example implements Example {
         CreditCardPayment creditCardPayment = new CreditCardPayment();
         CryptoPayment cryptoPayment = new CryptoPayment();
 
+        // The PaymentProcessor class uses the Payment abstraction, therefore it is closed for modification and
+        // open for extension.
+
         paymentProcessor.processPayment(checkingAccountDebitPayment);
         paymentProcessor.processPayment(savingsAccountPayment);
         paymentProcessor.processPayment(travelPointsPayment);

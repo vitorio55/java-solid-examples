@@ -12,6 +12,9 @@ public class S_Example implements Example {
         UserRepository userRepository = new UserRepository();
         UserAuthenticator userAuth = new UserAuthenticator();
 
+        // Each responsibility of our scope here is divided into specific classes, according to the
+        // Single Responsibility Principle.
+
         dbConn.connectToDatabase("<database_url>");
         userRepository.createUser("John");
         userRepository.changeUserName("Steve");

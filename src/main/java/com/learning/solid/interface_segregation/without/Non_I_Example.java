@@ -13,6 +13,9 @@ public class Non_I_Example implements Example {
     public void runExample() throws ExecutionControl.NotImplementedException {
         System.out.println("==> Running Non-Interface Segregation Principle example (all methods must be implemented).");
 
+        // If you check the Telephone abstract class of this example you can easily see that it is full of operations
+        // that not all telephone types can implement. This violates the Interface Segregation Principle.
+
         LandlinePhone landlinePhone = new LandlinePhone();
         BasicCellphone basicCellphone = new BasicCellphone();
         SmartPhone smartPhone = new SmartPhone();

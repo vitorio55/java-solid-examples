@@ -14,8 +14,10 @@ public class Non_O_Example implements Example {
         payment.processPayment(PaymentType.TRAVEL_POINTS);
         payment.processPayment(PaymentType.CREDIT_CARD);
         payment.processPayment(PaymentType.CRYPTO);
-        // To add a new payment here it would required a PaymentProcessor's class modification, which is violates
+
+        // To add a new payment here it would required modifications to the PaymentProcessor class, which violates
         // the Open For Extension / Closed For Modification Principle.
+
     }
 
 }

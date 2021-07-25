@@ -14,7 +14,7 @@ public class PaymentProcessor {
 
     public void processPayment(PaymentType paymentType) {
         // Violates the Open For Extension / Closed For Modification Principle since we must add each new
-        // type of payment operation in the PaymentProcessor class.
+        // type of payment operation here.
 
         switch (paymentType) {
             case CHECKING_ACCOUNT_DEBIT:

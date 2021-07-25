@@ -13,6 +13,10 @@ public class I_Example implements Example {
     public void runExample() throws ExecutionControl.NotImplementedException {
         System.out.println("==> Running Interface Segregation Principle example (only the necessary methods are implemented!).");
 
+        // Unlike the Non-Interface Segregation Principle example, here we have small interfaces.
+        // Each telephone type that requires extra operations can extend and implement an extra small interface.
+        // This is compliant with the Interface Segregation Principle.
+
         LandlinePhone landlinePhone = new LandlinePhone();
         BasicCellphone basicCellphone = new BasicCellphone();
         SmartPhone smartPhone = new SmartPhone();
